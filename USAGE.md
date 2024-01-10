@@ -5,6 +5,7 @@ package main
 import (
 	"context"
 	test3samplesdk "github.com/speakeasy-sdks/test-3-sample-sdk"
+	"github.com/speakeasy-sdks/test-3-sample-sdk/pkg/models/shared"
 	"log"
 	"net/http"
 )
@@ -13,7 +14,10 @@ func main() {
 	s := test3samplesdk.New()
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
