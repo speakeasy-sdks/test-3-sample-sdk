@@ -7,7 +7,6 @@ import (
 	test3samplesdk "github.com/speakeasy-sdks/test-3-sample-sdk"
 	"github.com/speakeasy-sdks/test-3-sample-sdk/pkg/models/shared"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -21,8 +20,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if res.StatusCode == http.StatusOK {
+	if res != nil {
 		// handle response
 	}
 }
