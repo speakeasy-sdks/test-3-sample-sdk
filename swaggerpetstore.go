@@ -116,9 +116,9 @@ func New(opts ...SDKOption) *SwaggerPetstore {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.6.2",
-			GenVersion:        "2.291.0",
-			UserAgent:         "speakeasy-sdk/go 0.6.2 2.291.0 1.0.0 github.com/speakeasy-sdks/test-3-sample-sdk",
+			SDKVersion:        "0.6.3",
+			GenVersion:        "2.302.1",
+			UserAgent:         "speakeasy-sdk/go 0.6.3 2.302.1 1.0.0 github.com/speakeasy-sdks/test-3-sample-sdk",
 			Hooks:             hooks.New(),
 		},
 	}
